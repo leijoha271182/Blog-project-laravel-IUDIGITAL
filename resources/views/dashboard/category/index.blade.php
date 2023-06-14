@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @extends('dashboard.layout')
+=======
+@extends('layouts.app')
+
+>>>>>>> 9e61870a5aec3bea5d5005803aa863e7be327ab8
 @section('content')
     <a class="btn btn-success my-3" href="{{ route('categories.create') }}">Crear categoría</a>
     <table class="table">

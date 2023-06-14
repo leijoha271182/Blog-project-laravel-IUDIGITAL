@@ -6,6 +6,7 @@
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
+<<<<<<< HEAD
         "@tailwindcss/forms": "^0.5.2",
         "@vitejs/plugin-vue": "^4.0.0",
         "alpinejs": "^3.4.2",
@@ -16,6 +17,13 @@
         "postcss": "^8.4.6",
         "sass": "^1.56.1",
         "tailwindcss": "^3.1.0",
+=======
+        "@vitejs/plugin-vue": "^4.0.0",
+        "axios": "^1.1.2",
+        "bootstrap": "^5.2.3",
+        "laravel-vite-plugin": "^0.7.2",
+        "sass": "^1.56.1",
+>>>>>>> 9e61870a5aec3bea5d5005803aa863e7be327ab8
         "vite": "^4.0.0",
         "vue": "^3.2.37"
     }
