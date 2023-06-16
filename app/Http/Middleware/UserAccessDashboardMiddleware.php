@@ -16,10 +16,8 @@ class UserAccessDashboardMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::check() && Auth::user()->isAdmin()) {
+        if (Auth::user()->isAdmin())
             return $next($request);
-        }
-
         return redirect('/');
     }
 }
