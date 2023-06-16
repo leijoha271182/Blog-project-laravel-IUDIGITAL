@@ -1,12 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-<<<<<<< HEAD
-use Symfony\Component\Console\Input\ArgvInput;
-use Symfony\Component\Console\Output\ConsoleOutput;
-
-=======
->>>>>>> 9e61870a5aec3bea5d5005803aa863e7be327ab8
 define('LARAVEL_START', microtime(true));
 
 /*
@@ -39,13 +33,8 @@ $app = require_once __DIR__.'/bootstrap/app.php';
 $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
 
 $status = $kernel->handle(
-<<<<<<< HEAD
-    $input = new ArgvInput,
-    new ConsoleOutput
-=======
     $input = new Symfony\Component\Console\Input\ArgvInput,
     new Symfony\Component\Console\Output\ConsoleOutput
->>>>>>> 9e61870a5aec3bea5d5005803aa863e7be327ab8
 );
 
 /*
