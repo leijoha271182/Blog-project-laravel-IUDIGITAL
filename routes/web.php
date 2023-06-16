@@ -1,10 +1,9 @@
 <?php
 
-use Inertia\Inertia;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Application;
 use App\Http\Controllers\ProfileController;
-
+use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,14 +35,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::group(['prefix' => 'dashboard', 'middleware' => ['auth','admin']], function () {
-    Route::get('/', function () {
-        return view('dashboard');
-    })->name("dashboard");
-    Route::resources([
-        'post' => App\Http\Controllers\Dashboard\PostController::class,
-        'category' => App\Http\Controllers\Dashboard\CategoryController::class,
-    ]);
-});
-
-require __DIR__ . '/auth.php';
+require __DIR__.'/auth.php';
